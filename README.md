@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> بوابة السفراء -منصة نحن</title>
+    <title> بوابة السفراء - منصة نحن</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -57,7 +57,7 @@
             font-weight: bold;
             color: white;
         }
-        input[type="text"], input[type="tel"] {
+        input[type="text"], input[type="tel"], select {
             width: 100%;
             padding: 10px;
             margin-top: 5px;
@@ -66,7 +66,7 @@
             border-radius: 5px;
             font-size: 14px;
         }
-        input[type="text"]:focus, input[type="tel"]:focus {
+        input[type="text"]:focus, input[type="tel"]:focus, select:focus {
             border-color: #007bff; /* لون الحدود عند التفاعل */
             outline: none;
         }
@@ -94,7 +94,81 @@
             <input type="text" id="fullName" name="entry.601052600" required>
             
             <label for="university">اسم الجامعة:</label>
-            <input type="text" id="university" name="entry.1904839153" required>
+            <select id="university" name="entry.1904839153" required>
+                <option value="">اختر الجامعة أو الكلية</option>
+                <!-- الجامعات الحكومية -->
+                <option value="الجامعة الأردنية">الجامعة الأردنية</option>
+                <option value="جامعة اليرموك">جامعة اليرموك</option>
+                <option value="جامعة العلوم والتكنولوجيا الأردنية">جامعة العلوم والتكنولوجيا الأردنية</option>
+                <option value="جامعة مؤتة">جامعة مؤتة</option>
+                <option value="جامعة البلقاء التطبيقية">جامعة البلقاء التطبيقية</option>
+                <option value="جامعة الطفيلة التقنية">جامعة الطفيلة التقنية</option>
+                <option value="جامعة الحسين بن طلال">جامعة الحسين بن طلال</option>
+                <option value="جامعة جدارا">جامعة جدارا</option>
+                <option value="جامعة العقبة للتكنولوجيا">جامعة العقبة للتكنولوجيا</option>
+                <option value="الجامعة الهاشمية">الجامعة الهاشمية</option>
+                <option value="جامعة آل البيت">جامعة آل البيت</option>
+                <option value="الجامعة الألمانية الأردنية">الجامعة الألمانية الأردنية</option>
+                <option value="فرع الجامعة الأردنية في العقبة">فرع الجامعة الأردنية في العقبة</option>
+                
+                <!-- الكليات التطبيقية التابعة لجامعة البلقاء التطبيقية -->
+                <option value="أكاديمية الأمير حسين للحماية المدنية">أكاديمية الأمير حسين للحماية المدنية</option>
+                <option value="كلية العقبة الجامعية">كلية العقبة الجامعية</option>
+                <option value="كلية معان الجامعية">كلية معان الجامعية</option>
+                <option value="كلية الحصن الجامعية">كلية الحصن الجامعية</option>
+                <option value="كلية الكرك الجامعية">كلية الكرك الجامعية</option>
+                <option value="كلية إربد الجامعية">كلية إربد الجامعية</option>
+                <option value="كلية الزرقاء الجامعية">كلية الزرقاء الجامعية</option>
+                <option value="كلية الشوبك الجامعية">كلية الشوبك الجامعية</option>
+                <option value="كلية الهندسة التكنولوجية">كلية الهندسة التكنولوجية</option>
+                <option value="كلية الأميرة عالية الجامعية">كلية الأميرة عالية الجامعية</option>
+                <option value="كلية الأميرة رحمة الجامعية">كلية الأميرة رحمة الجامعية</option>
+                <option value="كلية عجلون الجامعية">كلية عجلون الجامعية</option>
+                <option value="كلية عمان الجامعية للعلوم المالية والإدارية">كلية عمان الجامعية للعلوم المالية والإدارية</option>
+                
+                <!-- الجامعات الخاصة -->
+                <option value="جامعة ابن سينا للعلوم الطبية">جامعة ابن سينا للعلوم الطبية</option>
+                <option value="جامعة العقبة للعلوم الطبية">جامعة العقبة للعلوم الطبية</option>
+                <option value="جامعة العقبة للتكنولوجيا">جامعة العقبة للتكنولوجيا</option>
+                <option value="جامعة عجلون الوطنية">جامعة عجلون الوطنية</option>
+                <option value="الجامعة الأمريكية في مادبا">الجامعة الأمريكية في مادبا</option>
+                <option value="جامعة جدارا">جامعة جدارا</option>
+                <option value="جامعة الشرق الأوسط">جامعة الشرق الأوسط</option>
+                <option value="جامعة عمان العربية">جامعة عمان العربية</option>
+                <option value="جامعة الزرقاء">جامعة الزرقاء</option>
+                <option value="جامعة إربد الأهلية">جامعة إربد الأهلية</option>
+                <option value="جامعة الزيتونة الأردنية">جامعة الزيتونة الأردنية</option>
+                <option value="جامعة جرش">جامعة جرش</option>
+                <option value="جامعة الأميرة سمية للتكنولوجيا">جامعة الأميرة سمية للتكنولوجيا</option>
+                <option value="جامعة الإسراء">جامعة الإسراء</option>
+                <option value="جامعة البترا">جامعة البترا</option>
+                <option value="جامعة العلوم التطبيقية الخاصة">جامعة العلوم التطبيقية الخاصة</option>
+                <option value="جامعة فيلادلفيا">جامعة فيلادلفيا</option>
+                <option value="جامعة عمان الأهلية">جامعة عمان الأهلية</option>
+                
+                <!-- الجامعات الإقليمية والدولية -->
+                <option value="الجامعة العربية المفتوحة فرع الأردن">الجامعة العربية المفتوحة فرع الأردن</option>
+                
+                <!-- الجامعات ذات قانون خاص -->
+                <option value="جامعة الحسين التقنية">جامعة الحسين التقنية</option>
+                <option value="جامعة العلوم الإسلامية العالمية">جامعة العلوم الإسلامية العالمية</option>
+                
+                <!-- المستشفيات الجامعية -->
+                <option value="مستشفى الجامعة الأردنية">مستشفى الجامعة الأردنية</option>
+                <option value="مستشفى الملك المؤسس عبد الله الجامعي">مستشفى الملك المؤسس عبد الله الجامعي</option>
+                
+                <!-- الكليات الجامعية -->
+                <option value="الكلية الجامعية الوطنية للتكنولوجيا">الكلية الجامعية الوطنية للتكنولوجيا</option>
+                <option value="كلية طلال أبو غزالة الجامعية للابتكار">كلية طلال أبو غزالة الجامعية للابتكار</option>
+                <option value="الأكاديمية الملكية لفنون الطهي">الأكاديمية الملكية لفنون الطهي</option>
+                <option value="كلية العلوم التربوية والآداب (جامعة ناعور)">كلية العلوم التربوية والآداب (جامعة ناعور)</option>
+                <option value="الأكاديمية الأردنية للموسيقى">الأكاديمية الأردنية للموسيقى</option>
+                <option value="كلية لومينوس الجامعية التقنية">كلية لومينوس الجامعية التقنية</option>
+                <option value="كلية عمون الجامعية التطبيقية">كلية عمون الجامعية التطبيقية</option>
+                <option value="الكلية الجامعية العربية للتكنولوجيا">الكلية الجامعية العربية للتكنولوجيا</option>
+                <option value="كلية الخوارزمي الجامعية التقنية">كلية الخوارزمي الجامعية التقنية</option>
+                <!-- يمكنك إضافة المزيد من الجامعات والكليات هنا -->
+            </select>
             
             <label for="specialization">التخصص:</label>
             <input type="text" id="specialization" name="entry.2012494155" required>
@@ -110,7 +184,7 @@
     </main>
     <footer>
         <p> 2024 بوابة السفراء. جميع الحقوق محفوظة.</p>
-    <p>This portal was designed by Engineer Farhan AL- Khawaldeh.</p>
+        <p>This portal was designed by Engineer Farhan AL- Khawaldeh.</p>
     </footer>
 
     <script>
