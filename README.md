@@ -110,6 +110,7 @@
     </main>
     <footer>
         <p> 2024 بوابة السفراء. جميع الحقوق محفوظة.</p>
+        <p>This portal was designed by Engineer Farhan AL- Khawaldeh.</p>
     </footer>
 
     <script>
